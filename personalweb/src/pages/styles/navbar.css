@@ -1,7 +1,7 @@
 .Header {
     height: 100%;
     position: fixed;
-    background-color: rgb(108, 100, 100);
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -12,31 +12,38 @@
 }
 
 button{
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: 75px;
     margin-bottom: 20px;
     background-color: inherit;
+    border: none;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    border-color: white;
+    /* border-color: white; */
     border-width: 2px;
     transition: transform 1s;
+    color: white;
 }
 
 button:hover{
-    background-color: aqua;
+    background-color: inherit;
     color: rgb(255, 255, 255);
     cursor: grab;
     transform: scale(1.1);
 }
 
-button:focus{
+/* button:focus{
     background-color: aqua;
     color: white;
+} */
+
+button img{
+    width: 50px;
+    height: 50px;
 }
 
 button p{
-    font-weight: 900;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 10px;
 }

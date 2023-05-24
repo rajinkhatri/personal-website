@@ -1,67 +1,105 @@
-.Home{
-    padding: 100px;
-    background-color: rgb(5, 4, 4);
+.MainDiv{
+    /* background-image: url('https://cdn.wallpapersafari.com/68/60/VKy1AE.jpg'); */
+    background-image: url('D:\RAJIN KHATRI\personal-website\personalweb\src\images\moon.jpg');
     font-family: 'Courier New', Courier, monospace;
-    background-image: url('D:\RAJIN KHATRI\personal-website\personalweb\src\images\stars.jpg');
-    /* background-image: url('D:\RAJIN KHATRI\personal-website\personalweb\src\images\codebg.jpg'); */
-    flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: bisque;
+    background-color: rgb(21, 19, 19);
+    padding-left: 100px;
+    overflow: hidden;
+}
+
+.TopDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
 }
 
 .mainText{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.subText{
-    display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    padding-top: 100px;
 }
 
-.subText h1{
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    margin-left: 100px;
+.mainText h1{
+    font-size: 4rem;
+    color: white;
+    font-weight: 600;
 }
 
-.subText p{
-    font-size: 6rem;
-    color: rgb(7, 116, 116);
-    margin-left: 50px;
-}
-
-.Header2{
-    font-size: 1.5rem;
-    padding-left: 100px;
-    color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: 500;
-}
-
-.Header2 li{
-    list-style: none;
-    margin: 0px 10px;
-}
-
-#identity1{
+.mainText p{
+    font-size: 7rem;
+    color: white;
+    font-weight: 900;
     padding-left: 50px;
 }
 
-#identity2{
-    padding-left: 75px;
+.Role{
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 180px;
 }
 
-#identity3{
-    padding-left: 100px;
+.ImageHead{
+    padding-top: 75px;
+    padding-right: 50px;
 }
 
-.profileimage{
+.ImageHead img{
     width: 350px;
     height: auto;
     border-radius: 50%;
+}
+
+.Quote{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding-top: 50px;
+    color: azure;
+    font-weight: 600;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+blockquote {
+	font-weight: 100;
+	font-size: 2rem;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .5rem;
+    margin-bottom: 35px;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #f1efe6;
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
 }

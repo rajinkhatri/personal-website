@@ -1,44 +1,77 @@
 import './styles/Home.css';
 import photo1 from '../images/photo1.jpg';
-import codebg from '../images/codebg.jpg';
 
-const Home = () => {
-    return (
-        <div className='Home'>
-            <MainText></MainText>
-            {/* <Header2></Header2> */}
+const Home = () =>{
+    return(
+        <div className='MainDiv'>
+            <UpperPart></UpperPart>
+            <LowerPart></LowerPart>
+        </div>
+    )
+}
+
+const UpperPart = () =>{
+    return(
+        <div className='TopDiv'>
+            <TextDiv></TextDiv>
             <Profile></Profile>
         </div>
     )
 }
 
-const MainText = () => {
-    return (
-        <div className='mainText'>
-            <div className='subText'>
-                <h1>i am </h1>
-                <p>Rajin Khatri</p>
-            </div>
-            <Header2></Header2>
+const LowerPart =() =>{
+    return(
+        <div className='LowerPart'>
+            <Quote></Quote>
         </div>
     )
 }
 
-const Header2 = () => {
-    return (
-        <div className='Header2'>
-            <ul>
-                <li id='identity1'>student,</li>
-                <li id='identity2'>learner,</li>
-                <li id='identity3'>blahblah</li>
-            </ul>
+const TextDiv =() =>{
+    return(
+        <div className='IntroSection'>
+            <MainText></MainText>
+            <Roles></Roles>
+        </div>
+    )
+}
+
+const MainText = () =>{
+    return(
+        <div className='mainText'>
+            <h1>i am</h1>
+            <p>Rajin Khatri</p>
+        </div>
+    )
+}
+
+const Roles = () =>{
+    return(
+        <div className='Role'>
+            <p id='identity1'>Student</p>
+            <p id='identity2'>Web Developer</p>
+            <p id='identity3'>Machine Learning Enthusiast</p>
         </div>
     )
 }
 
 const Profile = () => {
-    return (
-        <img src={photo1} className='profileimage'></img>
+    return(
+        <div className='ImageHead'>
+            <img src={photo1} alt='Profile'></img>
+        </div>
+    )
+}
+
+const Quote = () =>{
+    return(
+        <div className='Quote'>
+            <blockquote>
+                You decide what you want to do and what you don't,
+                what you want to say and what you don't, 
+                how to spend your time.
+            </blockquote>
+        </div>
     )
 }
 

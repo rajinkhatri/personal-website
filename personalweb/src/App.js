@@ -6,8 +6,6 @@ function App() {
   return (
     <>
     <NavBar></NavBar>
-    <br></br>
-    <br></br>
     <Home></Home>
     </>    
   );

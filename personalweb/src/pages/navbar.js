@@ -1,5 +1,8 @@
 import '../pages/styles/navbar.css'
 import Home from '../images/home.png';
+import Academics from '../images/academics.png';
+import Projects from '../images/projects.png';
+import Mail from '../images/mail1.png';
 
 const NavBar = () => {
     return (
@@ -9,16 +12,16 @@ const NavBar = () => {
                         <img src={Home}></img><br></br><p>Home</p>
                     </button>
                     <button>
-                        <img src={Home}></img><br></br><p>About Me</p>
+                        <img src={Academics}></img><br></br><p>Academics</p>
                     </button>
                     <button>
-                        <img src={Home}></img><br></br><p>Study</p>
+                        <img src={Projects}></img><br></br><p>Projects</p>
                     </button>
                     <button>
-                        <img src={Home}></img><br></br><p>Projects</p>
+                        <img src={Mail}></img><br></br><p>About Me</p>
                     </button>
                     <button>
-                        <img src={Home}></img><br></br><p>Contact Me</p>
+                        <img src={Mail}></img><br></br><p>Contact Me</p>
                     </button>
             </nav>
         </div>
