@@ -11,11 +11,21 @@ const MainBody = () => {
             <p className='text-zinc-800 m-4 pt-8 pb-8 text-6xl font-bold md:p-8 md:mt-20 md:mb-4 w-11/12 md:mx-auto border-2 border-blue-700 '>Front-End React Developer 👋</p>
             <p className=' text-xl mx-4 my-2 w-11/12 '>Hi, I am Rajin Khatri. A pasionate Front-End React Developer based in Kathmandu, Nepal. 📍</p>
         </div>
-    <div>
+    <div className='flex flex-row justify-around my-8 mx-auto gap-4 '>
       {/* <Link to={url1}>test1</Link> */}
-      <a href="https://www.stefantopalovic.com/#about">Test 1</a>
+      <a target='_blank' href="https://www.stefantopalovic.com/#about" className='border-2 border-red-800'>Github</a>
+      <a target='_blank' href="https://www.stefantopalovic.com/#about" className='border-2 border-red-800'>Linked In</a>
+    </div>
+    <TechStack />
     </div>
     </div>
+  )
+}
+
+const TechStack = () => {
+  return (
+    <div className=' flex flex-column text-2xl text-gray-600 justify-center underline font-semibold '>
+        <p>Tech Stack</p>
     </div>
   )
 }
