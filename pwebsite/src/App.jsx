@@ -1,6 +1,7 @@
 import Headersection from "./components/Headersection";
 import MainBody from "./components/MainBody";
 import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
 
 const App = () => {
   return(
@@ -8,6 +9,7 @@ const App = () => {
       <Headersection />
       <MainBody />
       <AboutMe />
+      <Projects />
     </div>
   )
 }
