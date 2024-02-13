@@ -33,11 +33,11 @@ const MainBody = () => {
 
 const TechStack = () => {
   return (
-    <div className=' flex flex-col text-2xl text-gray-600 align-middle font-semibold pb-8'>
-        <div className='mx-auto my-0 underline'>
+    <div className=' flex flex-col md:flex-row text-2xl text-gray-600 align-middle font-semibold pb-8'>
+        <div className='mx-auto my-0 md:my-4 underline border-2 border-red-500'>
           <p>Tech Stack</p>
         </div>
-          <div className='flex flex-row gap-12 mx-auto my-4'>
+          <div className='flex flex-row gap-12 mx-auto my-4 border-2 border-red-500'>
             <div className='flex flex-row gap-2 hover:scale-125'>
             <img src={HTML} className='w-12 h-12' alt="" />
             <img src={CSS} className='w-12 h-12' alt="" />
