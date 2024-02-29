@@ -47,7 +47,7 @@ const Projects = () => {
         <div className='bg-zinc-200 p-6'>
             <div className='w-4/5 mx-auto my-8 flex flex-col bg-slate-300'>
             <p className='text-4xl font-bold mx-auto my-4 text-slate-700'>My Projects..</p>
-            <span className='text-2xl w-9/12 mt-4 mx-auto'>"My code has a talent for breeding bugs faster than rabbits on a spring day!"</span>
+            <span className='lg:text-2xl sm:md:text-lg w-9/12 mt-4 mx-auto'>"My code has a talent for breeding bugs faster than rabbits on a spring day!"</span>
                 {
                     works.map((work, index) => (
                         <div key={index} className='flex odd:flex-row even:flex-row-reverse p-12 border-b-4 border-b-violet-400'>
