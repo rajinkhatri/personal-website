@@ -17,7 +17,7 @@ const MainBody = () => {
   return (
     <div className='mx-auto my-0 bg-zinc-200'>
     <div className=' flex flex-col md:flex-row-reverse w-4/5 mx-auto my-0'>
-        <img className=' mx-auto my-16 md:mb-0 sm:my-4 md:w-96 sm:w-80 md:h-96 sm:h-80 rounded-full' src={Profile} alt="Profile Picture" />
+        <img className=' mx-auto my-16 md:mb-0 sm:my-4 md:w-96 sm:w-80 md:h-96 sm:h-80 rounded-3xl' src={Profile} alt="Profile Picture" />
         <div className='w-3/4 sm:w-full mx-auto my-0'>
             <p className='text-zinc-800 m-4 pt-8 pb-8 text-6xl font-bold md:p-8 md:mt-20 md:mb-4 w-11/12 md:mx-auto '>Front-End React Developer 👋</p>
             <p className=' text-xl mx-auto my-2 w-10/12 '>Hi, I am Rajin Khatri. A pasionate Front-End React Developer based in Kathmandu, Nepal. 📍</p>

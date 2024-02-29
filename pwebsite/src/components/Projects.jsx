@@ -51,7 +51,7 @@ const Projects = () => {
                 {
                     works.map((work, index) => (
                         <div key={index} className='flex odd:flex-row even:flex-row-reverse p-12 border-b-4 border-b-violet-400'>
-                            <div className='flex md:lg:w-10/12 md:lg:flex-row sm:flex-col gap-8 p-4 rounded-2xl'>
+                            <div className='flex md:lg:w-10/12 md:lg:flex-row flex-col gap-8 p-4 rounded-2xl'>
                                 <div className='flex'>
                                     <img className='md:lg:w-full rounded-3xl sm:w-8/12 sm:mx-auto sm:my-0' src={work.image} alt="images" />
                                 </div>
