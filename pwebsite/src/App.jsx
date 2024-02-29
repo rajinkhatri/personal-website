@@ -2,6 +2,7 @@ import Headersection from "./components/Headersection";
 import MainBody from "./components/MainBody";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
+import ContactMe from "./components/Contactme";
 
 const App = () => {
   return(
@@ -10,6 +11,7 @@ const App = () => {
       <MainBody />
       <AboutMe />
       <Projects />
+      <ContactMe />
     </div>
   )
 }

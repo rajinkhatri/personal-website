@@ -1,49 +1,70 @@
 import React from 'react'
+import Pulmonary from '../assets/pulmonary.png';
+import OldPages from '../assets/oldpages.png';
+import Netflix from '../assets/netflix.png';
+import Default from '../assets/default.jpg'
 
 let works = [
     {
-        desc: 'hello world',
-        link: 'some url',
-        demo: 'demo link'
+        name: 'Engineering-Bookhub',
+        desc: 'Website created using React and Django with CRUD operations',
+        link: 'https://github.com/rajinkhatri/Engineering-BookHub',
+        demo: 'demo link',
+        image: Default,
     },
     {
-        desc: 'hello world2',
-        link: 'some url2',
-        demo: 'demo link2'
+        name: 'netflix_UI_copy',
+        desc: 'A copy of the netflix site made using React and CSS. Includes only the home page and signup page',
+        link: 'https://github.com/rajinkhatri/netflix_UI_copy',
+        demo: 'demo link2',
+        image: Netflix
     },
     {
-        desc: 'hello world3',
-        link: 'some url3',
-        demo: 'demo link3'
+        name: 'php_CRUD',
+        desc: 'A website created using php and has CRUD functions built into it',
+        link: 'https://github.com/rajinkhatri/php-CRUD',
+        demo: 'demo link3',
+        image: Default
     },
     {
-        desc: 'hello world4',
-        link: 'some url4',
-        demo: 'demo link4'
+        name: 'Pulmonary Classifier',
+        desc: 'Project done for the completion of minor project in college. Uses CNN and a React based website to classify diseases from an image.',
+        link: 'https://github.com/rajinkhatri/Pulmonary-Classifier',
+        demo: 'demo link4',
+        image: Pulmonary
     },
     {
-        desc: 'hello world5',
-        link: 'some url5',
-        demo: 'demo link5'
+        name: 'cloned-pages',
+        desc: 'A very old project where I tried to copy the UI of the facebook home page.',
+        link: 'https://github.com/rajinkhatri/cloned-pages',
+        demo: 'demo link5',
+        image: OldPages
     }
 ]
 
 const Projects = () => {
     return (
-        <div className='bg-zinc-300 p-4'>
-            <div className='w-4/5 mx-auto my-8 flex flex-col bg-slate-300 border-2 border-black'>
+        <div className='bg-zinc-200 p-6'>
+            <div className='w-4/5 mx-auto my-8 flex flex-col bg-slate-300'>
+            <p className='text-4xl font-bold mx-auto my-4 text-slate-700'>My Projects..</p>
+            <span className='text-2xl w-9/12 mt-4 mx-auto'>"My code has a talent for breeding bugs faster than rabbits on a spring day!"</span>
                 {
                     works.map((work, index) => (
-                        <div key={index} className='flex odd:flex-row even:flex-row-reverse border-2 border-red-300 p-4'>
-                            <div className='flex border-2 justify-between border-blue-600'>
+                        <div key={index} className='flex odd:flex-row even:flex-row-reverse p-12 border-b-4 border-b-violet-400'>
+                            <div className='flex md:lg:w-10/12 md:lg:flex-row sm:flex-col gap-8 p-4 rounded-2xl'>
                                 <div className='flex'>
-                                    <img src="" alt="images" />
+                                    <img className='md:lg:w-full rounded-3xl sm:w-8/12 sm:mx-auto sm:my-0' src={work.image} alt="images" />
                                 </div>
                                 <div className='flex flex-col'>
-                                <p className='text-2xl'>{work.desc}</p>
-                                    <div className='flex flex-row gap-4'>
-                                        <button className='border-2 border-black rounded-lg'>{work.link}</button>
-                                        <button>{work.demo}</button>
+                                <p className='text-4xl m-2 font-bold text-gray-600 sm:mx-auto'>{work.name}</p>    
+                                <p className='text-2xl m-3 font-normal'>{work.desc}</p>
+                                    <div className='flex flex-row font-semibold sm:mx-auto sm:my-0 gap-4'>
+                                        <button className='border-2 border-black rounded-lg p-2 m-2'>
+                                        <a href={work.link} target='_blank'>GitHub</a>
+                                        </button>
+                                        <button className='border-2 border-black rounded-lg p-2 m-2'>
+                                        <a href=''>Demo Link</a>
+                                        </button>
                                     </div>
                                 </div>
                                 </div>
