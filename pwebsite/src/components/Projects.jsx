@@ -56,8 +56,8 @@ const Projects = () => {
                                     <img className='md:lg:w-full rounded-3xl sm:w-8/12 sm:mx-auto sm:my-0' src={work.image} alt="images" />
                                 </div>
                                 <div className='flex flex-col'>
-                                <p className='text-4xl m-2 font-bold text-gray-600 sm:mx-auto'>{work.name}</p>    
-                                <p className='text-2xl m-3 font-normal'>{work.desc}</p>
+                                <p className='md:lg:text-4xl sm:text-2xl m-2 font-bold text-gray-600 sm:mx-auto'>{work.name}</p>    
+                                <p className='md:lg:text-2xl sm:text-xl m-3 font-normal'>{work.desc}</p>
                                     <div className='flex flex-row font-semibold sm:mx-auto sm:my-0 gap-4'>
                                         <button className='border-2 border-black rounded-lg p-2 m-2'>
                                         <a href={work.link} target='_blank'>GitHub</a>
