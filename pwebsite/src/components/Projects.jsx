@@ -45,34 +45,34 @@ let works = [
 const Projects = () => {
     return (
         <div className='bg-zinc-200 p-6'>
-            <div className='w-4/5 mx-auto my-8 flex flex-col bg-slate-300'>
-            <p className='text-4xl font-bold mx-auto my-4 text-slate-700'>My Projects..</p>
-            <span className='lg:text-2xl sm:md:text-lg w-9/12 mt-4 mx-auto'>"My code has a talent for breeding bugs faster than rabbits on a spring day!"</span>
+            <div className='w-4/5 mx-auto my-8 flex flex-col bg-slate-200 border-2 border-sky-300'>
+                <p className='text-4xl font-bold mx-auto my-4 text-slate-700'>My Projects..</p>
+                <span className='lg:text-xl sm:md:text-lg w-9/12 mt-4 mx-auto'>"My code has a talent for breeding bugs faster than rabbits on a spring day!"</span>
                 {
                     works.map((work, index) => (
                         <div key={index} className='flex odd:flex-row even:flex-row-reverse p-12 border-b-4 border-b-violet-400'>
-                            <div className='flex md:lg:w-10/12 md:lg:flex-row flex-col gap-8 p-4 rounded-2xl'>
+                            <div className='flex md:lg:w-10/12 lg:flex-row max-[660px]:flex-col gap-8 p-4 rounded-2xl border-2 border-white'>
                                 <div className='flex'>
                                     <img className='md:lg:w-full rounded-3xl sm:w-8/12 sm:mx-auto sm:my-0' src={work.image} alt="images" />
                                 </div>
                                 <div className='flex flex-col'>
-                                <p className='md:lg:text-4xl sm:text-2xl m-2 font-bold text-gray-600 sm:mx-auto'>{work.name}</p>    
-                                <p className='md:lg:text-2xl sm:text-xl m-3 font-normal'>{work.desc}</p>
+                                    <p className='md:lg:text-4xl sm:text-2xl m-2 font-bold text-gray-600 sm:mx-auto'>{work.name}</p>
+                                    <p className='md:lg:text-2xl sm:text-xl m-3 font-normal'>{work.desc}</p>
                                     <div className='flex flex-row font-semibold sm:mx-auto sm:my-0 gap-4'>
                                         <button className='border-2 border-black rounded-lg p-2 m-2'>
-                                        <a href={work.link} target='_blank'>GitHub</a>
+                                            <a href={work.link} target='_blank'>GitHub</a>
                                         </button>
                                         <button className='border-2 border-black rounded-lg p-2 m-2'>
-                                        <a href=''>Demo Link</a>
+                                            <a href=''>Demo Link</a>
                                         </button>
                                     </div>
                                 </div>
-                                </div>
                             </div>
+                        </div>
                     ))
                 }
             </div>
-    </div>
+        </div>
     )
 }
 
